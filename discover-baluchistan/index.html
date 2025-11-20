@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Balochistan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navbar (Glassmorphism + Sticky) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="backdrop-blur-md bg-white/30 border-b border-white/20">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <h1 class="text-2xl font-bold text-white">Balochistan</h1>
+                    <ul class="flex space-x-8 text-white">
+                        <li><a href="#home" class="hover:text-gray-200 transition">Home</a></li>
+                        <li><a href="#destinations" class="hover:text-gray-200 transition">Destinations</a></li>
+                        <li><a href="#about" class="hover:text-gray-200 transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-gray-200 transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920" 
+                 alt="Ziarat Residency" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
+                Discover Balochistan
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Explore the hidden gems of Pakistan's largest province
+            </p>
+            <button class="backdrop-blur-md bg-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/40 transition duration-300 border border-white/50">
+                Start Exploring
+            </button>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-bold text-center mb-16 text-gray-800">
+                Must-Visit Destinations
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: Ziarat -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl cursor-pointer h-96">
+                    <img src="ziyarat.JPEG" 
+                         alt="Ziarat" 
+                         class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-md bg-white/30">
+                        <h3 class="text-3xl font-bold text-white mb-2">Ziarat</h3>
+                        <p class="text-white/90">Home to the famous Ziarat Residency and juniper forests</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Hanna Lake -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl cursor-pointer h-96">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.D1Xs4mljBdxmo3bDPBW_5AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                         alt="Hanna Lake" 
+                         class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-md bg-white/30">
+                        <h3 class="text-3xl font-bold text-white mb-2">Hanna Lake</h3>
+                        <p class="text-white/90">A serene lake surrounded by mountains near Quetta</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Gwadar -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-xl cursor-pointer h-96">
+                    <img src="GAWADAR.JPEG" 
+                         alt="Gwadar" 
+                         class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 backdrop-blur-md bg-white/30">
+                        <h3 class="text-3xl font-bold text-white mb-2">Gwadar</h3>
+                        <p class="text-white/90">Pristine beaches and stunning coastal landscapes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 mt-2"><h4>MADE BY ZIA ULLAH KHAN</h4></p>
+             <p class="text-gray-400 mt-2">Ziakhank401@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
